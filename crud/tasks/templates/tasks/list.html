@@ -9,5 +9,14 @@
 </head>
 <body>
     <h3>Olá da página de teste.</h3>
+    <form>
+        {{form.title}}
+        <input type="submit" value="Cadastrar">
+    </form>
+    {% for task in tasks %}
+    <div>
+        <p>{{task}}</p>
+    </div>
+    {% endfor %}
 </body>
 </html>
